@@ -1,0 +1,11 @@
+version: '2'
+services:
+  gatewaystore-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/gatewaystore/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+    ports:
+      - 5432:5432
